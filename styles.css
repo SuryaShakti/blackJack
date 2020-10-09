@@ -1,0 +1,78 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./images/bakground.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        .container {
+            width: 75%;
+            margin: 30px auto;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0)), url(./images/blackjack.jpg);
+            color: aliceblue;
+            background-size: cover;
+            animation: zoomInDown 1s;
+            transform-origin: center;
+        }
+        
+        @keyframes beat {
+            to {
+                transform: scale(1.2);
+            }
+        }
+        
+        .flex-blackjack-row1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        #your-box {
+            border-radius: 10px;
+            border: 1px solid white;
+            height: 300px;
+            width: 50%;
+        }
+        
+        #dealer-box {
+            border-radius: 10px;
+            border: 1px solid white;
+            height: 300px;
+            width: 50%;
+        }
+        
+        .flex-blackjack-row2 {
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid white;
+            padding: 5px;
+        }
+        
+        .flex-blackjack-row3 {
+            display: flex;
+            justify-content: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin: 0 -15px;
+        }
+        
+        .score-board {
+            border-collapse: collapse;
+            margin: 5px;
+        }
+        
+        .score-board th,
+        td {
+            padding: 0 5px;
+            border: 1px solid white;
+        }
